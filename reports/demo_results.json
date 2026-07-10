@@ -12,6 +12,46 @@
   "next_step": "Replace seed episodes with simulator or public robot dataset trajectories.",
   "professor": "Pieter Abbeel",
   "project_family": "robotics",
+  "proposed_method": {
+    "algorithm_id": "P011-Abbeel-RobotLearning",
+    "algorithm_name": "AbbeelRobustRobotLearningScoreAgent",
+    "core_mechanism": "prioritizes trajectory steps where progress estimates diverge from expected subgoals",
+    "decision_rule": "Rank seed cases by robotics-specific priority score with Abbeel-aligned focus term 'Robot learning'.",
+    "mean_priority_score": 0.2562,
+    "project_family": "robotics",
+    "top_cases": [
+      {
+        "action": "inspect subgoal/progress model",
+        "case_id": "R3",
+        "priority_score": 0.86,
+        "signals": {
+          "failed": true,
+          "progress_error": 0.3,
+          "recovery": true
+        }
+      },
+      {
+        "action": "use as stable trajectory control",
+        "case_id": "R1",
+        "priority_score": 0.055,
+        "signals": {
+          "failed": false,
+          "progress_error": 0.05,
+          "recovery": false
+        }
+      },
+      {
+        "action": "use as stable trajectory control",
+        "case_id": "R2",
+        "priority_score": 0.055,
+        "signals": {
+          "failed": false,
+          "progress_error": 0.05,
+          "recovery": false
+        }
+      }
+    ]
+  },
   "research_area": "Robot learning, RL, imitation learning",
   "university": "University of California Berkeley",
   "value_add": "progress-state audit for language-conditioned robot policies"
