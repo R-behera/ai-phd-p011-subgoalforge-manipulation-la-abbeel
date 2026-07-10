@@ -1,0 +1,5 @@
+step_id,instruction,subgoal,predicted_progress,expected_progress,success,recovery_action
+R1,pick object for Robot learning,locate target,0.20,0.25,true,false
+R2,pick object for Robot learning,grasp target,0.45,0.50,true,false
+R3,pick object for Robot learning,recover from slip,0.55,0.85,false,true
+R4,pick object for Robot learning,place target,0.95,1.00,true,false

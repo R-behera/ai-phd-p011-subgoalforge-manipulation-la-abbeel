@@ -1,0 +1,18 @@
+{
+  "metrics": {
+    "artifact": "progress-state policy audit",
+    "high_error_steps": [
+      "R3"
+    ],
+    "mean_progress_error": 0.1125,
+    "num_steps": 4,
+    "recovery_action_rate": 0.25,
+    "success_rate": 0.75
+  },
+  "next_step": "Replace seed episodes with simulator or public robot dataset trajectories.",
+  "professor": "Pieter Abbeel",
+  "project_family": "robotics",
+  "research_area": "Robot learning, RL, imitation learning",
+  "university": "University of California Berkeley",
+  "value_add": "progress-state audit for language-conditioned robot policies"
+}

@@ -1,0 +1,13 @@
+{
+  "professor": "Pieter Abbeel",
+  "university": "University of California Berkeley",
+  "program": "EECS / BAIR",
+  "research_area": "Robot learning, RL, imitation learning",
+  "representative_paper": "Apprenticeship Learning via Inverse Reinforcement Learning; 2004; ICML",
+  "paper_link": "https://scholar.google.com/scholar?q=Apprenticeship+Learning+via+Inverse+Reinforcement+Learning",
+  "project_family": "robotics",
+  "focus": "Robot learning",
+  "value_add_artifact": "progress-state audit for language-conditioned robot policies",
+  "next_step": "Replace seed episodes with simulator or public robot dataset trajectories.",
+  "generated_for": "professor outreach value-add starter"
+}
