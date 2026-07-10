@@ -2,60 +2,36 @@
 
 ## Project Name
 
-SubgoalForge Manipulation Lab: Robot learning for Abbeel-Aligned Research
+RecoverableRobot Learning Suite: Robot learning for Abbeel-Aligned Research
 
 ## Motivation
 
-This project targets the intersection of **Robot learning, RL, imitation learning** and PhD-level research readiness. The goal is to produce a publishable-style artifact with a clear claim, reproducible experiments, and an honest account of failures.
+This project targets **Robot learning, RL, imitation learning** with a concrete, reproducible artifact rather than a vague expression of interest. The goal is to show research taste, useful engineering, and honesty about what has and has not been completed.
 
 ## Hypothesis
 
-A focused system that combines domain-specific inductive bias with rigorous evaluation will outperform generic baselines on reliability, generalization, or interpretability for the advisor-aligned task.
+A focused system that combines domain-specific task design with rigorous baselines and failure analysis can produce a useful lab contribution even before a full publication-scale result exists.
 
-## Core Research Question
+## Proposed Value
 
-Can explicit progress-state modeling improve language-conditioned robot policy generalization and recovery?
-
-## Novel Contribution
-
-1. Build a task definition and dataset split that reflects a real weakness in current models.
-2. Add one measurable method or evaluation contribution tied to Pieter Abbeel's research area.
-3. Report both positive results and failure cases with enough detail for another researcher to reproduce or challenge the claim.
+Build **a language-conditioned robot learning benchmark focused on progress, recovery, and generalization** focused on **Robot learning**.
 
 ## Data Plan
 
-DROID, BridgeData, RoboMimic, simulator tasks, and tabletop language-conditioned tasks.
+Use simulation or public robot datasets to build a reproducible progress-state evaluation before attempting any real-robot work.
 
-Advisor-specific slice: **Robot learning, RL, imitation learning**.
+## Baselines And Comparisons
 
-## Baselines
-
-behavior cloning, diffusion policy, offline RL, VLA policy, and hierarchy without progress supervision.
-
-## Main Method
-
-Start with the strongest reproducible baseline, then add one explicit contribution: provenance tracking, uncertainty estimation, progress-state modeling, controllable ranking, graph constraints, adaptive stress testing, or domain-prior regularization depending on the final task.
+Use the strongest simple baseline first, then add the proposed contribution only after the baseline is reproducible. The expected comparisons should include standard baselines, one stronger modern baseline, the proposed method or evaluation contribution, and an ablation with the key contribution removed.
 
 ## Evaluation Metrics
 
-task success, subgoal completion, recovery rate, OOD instruction success, and sim-to-real gap.
-
-## Ablations
-
-- Remove the domain-specific component.
-- Remove uncertainty, verification, or interpretability module if present.
-- Vary training data scale.
-- Evaluate in-domain and out-of-domain splits.
-- Run at least three seeds when stochastic training materially affects results.
+Use metrics appropriate to the area plus reproducibility checks: performance, calibration or uncertainty when relevant, failure slices, runtime/cost, and limitations.
 
 ## Failure Analysis
 
-Maintain a failure bank with input, expected behavior, observed behavior, suspected cause, fix attempted, and whether the fix generalized.
+Maintain a failure bank with input, expected behavior, observed behavior, suspected cause, remediation attempt, and whether the fix generalized.
 
-## Five-Week Milestones
+## Outreach Claim You Can Safely Make
 
-1. Literature map, exact task definition, dataset access, and baseline target.
-2. Dataset pipeline, first baseline, metrics dashboard, and experiment registry.
-3. Main method prototype and initial ablations.
-4. Robustness, OOD, or counterfactual evaluation with failure taxonomy.
-5. Final experiments, paper-style report, reproducibility package, and SOP-ready summary.
+You can say you have prepared a project scaffold and are ready to turn it into a reproducible contribution. Do not claim completed experiments until they exist.
